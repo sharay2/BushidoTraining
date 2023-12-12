@@ -1,0 +1,149 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+
+}
+.text {
+	animation: fade 3s;
+	font-family: 'Oswald';
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 400px;
+	width: auto;
+	font-size: large;
+	text-align: center;
+}
+#title {
+	/* background-size: 100%; */
+	width:100%;
+	margin-top: 0px;
+	overflow: hidden;
+	background: rgb(70,70,70);
+	height:80px;
+	justify-content: space-between;
+}
+#bottom-page{
+	background-color: rgb(70,70,70);
+	height: 125px;
+	width: 100%;
+	margin-bottom: 0;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.titimg {
+	animation: fade 2s;
+	width: auto;
+	height: 70px;
+	margin-top: 4px;
+	margin-right: 40px;
+	margin-left: 20px;
+	/* border: 2px solid black; */
+}
+.butt {
+	font-family: Staatliches;
+	border: none;
+	margin-top: 5px;
+	padding: 20px 20px 20px 20px;
+	font-size: 24px;
+	transition-duration: 0.5s;
+	background-color: rgb(70,70,70);
+	margin-left: 0px;
+	margin-right: 0px;
+	/* border: 2px solid black; */
+	vertical-align: top;
+
+	position: relative;
+	display: inline-block;
+}
+.butt:hover {
+	background-color: none;
+	color: black;
+}
+.butt:after {
+	content:  "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	transition: width 0.5s ease 0s, left 0.5s ease 0s;
+	width: 0;
+	transform: scale(X);
+	background-color: black;
+}
+.butt:hover:after {
+	width: 70%;
+	left: 15%;
+}
+#shop{
+	animation: fade 3s;
+	justify-content: center;
+	background-color: none;
+	padding: 16px 16px;
+	border: 4px none;
+	gap: flex;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Staatliches;
+}
+.merch{
+	background: none;
+	border: 2px solid darkred;
+	flex: 1;
+	padding: 0px;
+	text-align: center;
+	margin: 16px;
+	justify-content: center;
+	max-width: 256px;
+	opacity: 1;
+}
+.image{
+	transition: 1s ease;
+	display: inline-block;
+	width: 256px;
+	height: 256px;
+}
+.image:hover{
+	opacity: 0.5;
+}
+.item{
+	border: none;
+	background-color: white;
+	font-family: Staatliches;
+	font-size: 16px;
+}
+.intro{
+	border: 2px solid black;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, .75)), url("images/brothers.jpg");
+	background-size: 100%;
+	background-position: center;
+	align-items: center;
+}
+.text-overlay{
+	animation: fade 3s;
+	font-family: 'Staatliches';
+	font-size: 32px;
+	color:white;
+	text-align: center;
+	margin-top: 8%;
+	/* border: 2px solid white; */
+}
+#quote{
+	font-size: 20px;
+	font-family: 'Roboto Condensed';
+	position: relative;
+	text-align: center;
+}
+
+@keyframes fade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
